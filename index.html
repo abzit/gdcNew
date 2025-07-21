@@ -11,7 +11,7 @@
     <div class="page">
         <div class="bg">
             <div class="bg-video">
-                <video src="./media/GDC.MP4" autoplay muted playsinline></video>
+                <video src="./media/GDC.mp4" autoplay muted playsinline></video>
             </div>
             <div class="logo">
                 <img src="./media/GDC NEW VERSION.png" alt="GDC Logo" height="100">
@@ -33,4 +33,23 @@
         </div>
     </div>
 </body>
+<button id="unmuteBtn">🔊 Unmute</button>
+<script>
+    const video = document.querySelector('.bg-video video');
+    const unmuteBtn = document.getElementById('unmuteBtn');
+
+    // Show button initially
+    unmuteBtn.style.display = 'block';
+
+    // Hide after 4 seconds
+    setTimeout(() => {
+        unmuteBtn.style.display = 'none';
+    }, 4000);
+
+    unmuteBtn.addEventListener('click', () => {
+        video.muted = false;
+        video.play();
+        unmuteBtn.style.display = 'none'; // Hide button after unmuting
+    });
+</script>
 </html>

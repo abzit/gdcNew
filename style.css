@@ -14,10 +14,10 @@
     transform: translate(-25%,-2%);
     filter: contrast(1.2) blur(5px);
     z-index: 1;
-    animation: swipeUp 0.8s 5s forwards ease-out;
+    animation: swipeUp 0.8s 6s forwards ease-out;
 }
 .logo img{
-    animation: pulse 1.6s infinite ease-in-out,LogoUp 0.8s 5s forwards ease-out;
+    animation: pulse 1.6s infinite ease-in-out,LogoUp 0.8s 6s forwards ease-out;
     
 }
 .bg-video{
@@ -70,4 +70,25 @@
     to{
         transform: translate(0,-250px);
     }
+}
+
+
+#unmuteBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+#unmuteBtn:hover {
+    background-color: rgba(255, 255, 255, 1);
 }

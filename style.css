@@ -5,8 +5,9 @@
 }
 .page{
     width: 100vw;
-    background-color: black;
-    color: white
+    background-image: url("./media/neonthunder.gif");
+    color: whitesmoke;
+    overflow-x: hidden;
 }
 .bg-video video{
     height: 120%;
@@ -110,8 +111,8 @@
 .group-img img{
     height: 100%;
     width: 100%;
-    filter: drop-shadow(1px 1px 2px rgba(255, 254, 254, 0.473)) contrast(1.8) saturate(0.7);
-    object-fit: cover
+    filter: contrast(1.5) saturate(0.9);
+    object-fit: cover;
 }
 .group-img{
     width: 150%;
@@ -122,7 +123,7 @@
     width: 90%;
     transform: translate(0,30%);
     font-size: 1.6rem;
-    text-align:justify;
+    text-align: center;
     padding: 2rem 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: lighter;
